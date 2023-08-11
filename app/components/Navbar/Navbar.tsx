@@ -1,5 +1,6 @@
 import Container from "../Container";
 import Search from "./Search";
+import UserMenu from "./UserMenu";
 import Logo from "./logo";
 
 
@@ -13,6 +14,7 @@ const Navbar=()=>{
            <div className="flex flex-row items-center justify-between gap-3 mdgap-0">
             <Logo/>
             <Search/>
+            <UserMenu/>
            </div>
         </Container>
        </div>
