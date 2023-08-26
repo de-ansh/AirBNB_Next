@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import Navbar from "./components/Navbar/Navbar"
 import ClinetOnly from "./components/ClientOnly"
 import RegisterModal from "./components/Modals/RegisterModal"
+import ToasterProvider from "./providers/ToastProviders"
 
 
 
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <ClinetOnly>
+          <ToasterProvider/>
           <RegisterModal />
           <Navbar/>
         </ClinetOnly>
