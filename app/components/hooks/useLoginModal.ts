@@ -1,6 +1,6 @@
 import {create } from 'zustand';
 
-interface RegisterModalStore{
+interface LoginModalStore{
     isOpen:boolean;
     onOpen: ()=> void;
     onClose: ()=> void;
@@ -8,11 +8,11 @@ interface RegisterModalStore{
 
 }
 
-const UseRegisterModal = create<RegisterModalStore>((set) =>({
+const UseLoginModal = create<LoginModalStore>((set) =>({
     isOpen:false,
     onOpen: () => set({isOpen:true}),
     onClose:() => set({isOpen: false})
 })
 );
 
-export default UseRegisterModal;
+export default UseLoginModal;
